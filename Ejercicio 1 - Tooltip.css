@@ -1,0 +1,117 @@
+*
+{
+    padding: 0.3em;
+    font-family: "Open Sans", sans-serif;
+    background-color: rgb(230, 242, 253);
+}
+
+.cabecera
+{
+    height: 10vh;
+    padding: 1em;
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px, 0px, 2px, #777;
+}
+
+.x1
+{
+    border: 2px solid black;
+    margin: 2px;
+    padding: 1em;
+    border-radius: 20px;
+}
+
+
+body
+{
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+main
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.boton
+{
+    background-color: rgb(1, 187, 1);
+    border-radius: 10px;
+    height: 40px;
+    width: 100px;
+}
+
+.lateral
+{
+    display: flex;
+}
+
+img
+{
+    border-radius: 15px;
+}
+
+footer
+{
+    display: flex;
+    justify-content: end;
+    text-align: right;
+    margin: 10px;
+    padding: 0.5em;
+}
+
+.texto
+{
+    margin: 2px;
+}
+
+.menu
+{
+    height: 5vh;
+    padding: 0.3em;
+    margin: 10px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 25px;
+}
+
+.tooltip-contenedor
+{
+    position: relative; 
+    display: inline-block; 
+    cursor: pointer;
+}
+
+.tooltip
+{
+    visibility: hidden;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 40px;
+    background: linear-gradient(violet, pink);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    opacity: 0;
+    transition: opacity 1s ease-in-out, visibility 5s ease-in-out;
+}
+
+.tooltip-contenedor:hover ~ .tooltip
+{
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
+}
+
+.tooltip-contenedor:hover ~ .tooltip
+{
+    visibility: hidden;
+    opacity: 1;
+    transition-delay: 5s;
+}

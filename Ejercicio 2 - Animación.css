@@ -1,0 +1,108 @@
+*
+{
+    padding: 0.3em;
+    font-family: "Open Sans", sans-serif;
+    background-color: rgb(230, 242, 253);
+}
+
+.cabecera
+{
+    height: 10vh;
+    padding: 1em;
+    margin: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 2px, 0px, 2px, #777;
+    border-radius: 20px;
+}
+
+body
+{
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+main
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer
+{
+    display: flex;
+    justify-content: end;
+    text-align: right;
+    margin: 10px;
+    padding: 0.5em;
+}
+
+.menu
+{
+    height: 5vh;
+    padding: 0.3em;
+    margin: 10px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 25px;
+}
+
+.polaroid 
+{ 
+    width: 350px;
+    padding: 10px 10px 60px 10px;
+    background-color: white;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+    margin: 10px;
+    border: 1px solid #ccc;
+    display: flex;
+}
+
+div
+{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    flex-shrink: 1;
+}
+
+.div1:hover
+{
+    animation-name: girar;
+    animation-duration: 0.5s;
+}
+
+.div2:hover
+{
+    animation-name: girar;
+    animation-duration: 0.5s;
+}
+
+.div3:hover
+{
+    animation-name: girar;
+    animation-duration: 0.5s;
+}
+
+.logo
+{
+    border-radius: 15px;
+}
+
+@keyframes girar
+{
+    from
+    {
+        transform: matrix(1, 0, 0, 1, 0, 0);
+    }
+
+    to
+    {
+        transform: matrix(1.1, -0.1, 0.1, 1.1, 0, 0);
+    }
+}
